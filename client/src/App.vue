@@ -1,10 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-    </div>
-    <router-view />
+    <v-app>
+      <page-header></page-header>
+      <main>
+        <v-container fluid>
+          <router-view></router-view>
+        </v-container>
+      </main>
+    </v-app>
   </div>
 </template>
+
+<script>
+  import PageHeader from '@/components/Header.vue'
+
+  export default {
+    name: 'app',
+    components: {
+      PageHeader
+    }
+  }
+</script>
 
 <style>
 #app {
@@ -27,4 +43,5 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
