@@ -44,4 +44,8 @@
   color: #42b983;
 }
 
+.danger-alert {
+  color: red;
+}
+
 </style>
